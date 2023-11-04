@@ -107,12 +107,93 @@
                                 </th>
                             </tr>
                         </thead>
-                        <tbody id="listado-clientes" class="bg-white"></tbody>
+                        <tbody id="listado-clientes" class="bg-white">
+                            <!-- <tr>
+                                <td id="nombre" class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium tracking-wider">
+                                        Víctor Jimenez
+                                </td>
+                                <td id="telefono" class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium tracking-wider">
+                                        123456789
+                                </td>
+                                <td id="empresa" class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium tracking-wider">
+                                        Empresa
+                                </td>
+                                <td class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium tracking-wider">
+                                    <a href="#" class="editar-cliente" data-id="${idCliente}">Editar</a>
+                                    <a href="#" class="eliminar-cliente" data-id="${idCliente}">Eliminar</a>
+                                </td>
+                            </tr> -->
+                        </tbody>
                     </table>
                   </div>
                 </div>
               </div>
             <!-- TABLA -->
+
+            <!-- EDITAR CLIENTE -->
+            <br>
+            <h2 class="text-3xl font-light text-center">Editar Cliente</h2>
+
+            <div class="flex flex-col mt-10 items-center">
+                <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 w-10/12 md:w-8/12 lg:w-6/12">
+                    <div class=" shadow overflow-hidden sm:rounded-lg border-b border-gray-200 ">
+                        <form id="formulario" class="bg-white p-3" method="POST">
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">Nombre</label>
+                                <input 
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="nombre"
+                                    name="nombre"
+                                    type="text"
+                                    placeholder="Nombre Cliente"
+                                />
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Correo</label>
+                                <input 
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    placeholder="Email Cliente"
+                                />
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="telefono">Telefono</label>
+                                <input 
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="telefono"
+                                    name="telefono"
+                                    type="tel"
+                                    placeholder="Telefono Cliente"
+                                />
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="empresa">Empresa</label>
+                                <input 
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="empresa"
+                                    name="empresa"
+                                    type="text"
+                                    placeholder="Empresa Cliente"
+                                />
+                            </div>
+
+                            <input type="hidden" name="id" id="id" value="">
+
+
+                            <input
+                                type="submit"
+                                class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2 text-white uppercase font-bold"
+                                value="Guardar Cambios"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- EDITAR CLIENTE -->
         </main>
     </div>
     
